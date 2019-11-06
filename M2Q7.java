@@ -10,10 +10,10 @@ public class M2Q7{
         if(a >= 60 && b >= 60 && c >= 60){
             System.out.println("P");
         }
-        else if(a < 60 && b >= 60 && c>=60 || b < 60 && a >= 60 && c>=60 || c < 60  && b >= 60 && a>=60 && a+b+c >= 220){
+        else if((a < 60 && b >= 60 && c>=60 || b < 60 && a >= 60 && c>=60 || c < 60  && b >= 60 && a>=60) && a+b+c >= 220){
             System.out.println("P");
         }
-        else if(a < 60 && b >= 60 && c>=60 || b < 60 && a >= 60 && c>=60 || c < 60 && b >= 60 && a>=60 && a+b+c < 220){
+        else if((a < 60 && b >= 60 && c>=60 || b < 60 && a >= 60 && c>=60 || c < 60 && b >= 60 && a>=60) && a+b+c < 220){
             System.out.println("M");
         }
         else if(a < 60 && b < 60 && c >= 80 || a < 60 && c < 60 && b >= 80 || b < 60 && c < 60 && a >= 80){
